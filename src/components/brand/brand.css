@@ -1,0 +1,46 @@
+.gpt3__brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInDown 0.5s;
+}
+
+.gpt3__brand div {
+    flex: 1;
+    max-width: 150px;
+    min-width: 120px;
+    margin: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+.gpt3__brand img{
+    max-width: 100%;
+    filter: grayscale(1);
+    cursor: pointer;
+    align-self: center;
+}
+
+.gpt3__brand div:hover{
+    transform: translateY(-2px);
+    filter: brightness(1.5);
+}
+
+.gpt3__brand .amazon{
+    transform: translateY(6px);
+}
+
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
